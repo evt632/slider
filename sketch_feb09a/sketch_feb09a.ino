@@ -54,7 +54,7 @@ void go(){
     delay(1000);  
 
   //Send stepper motor forward 1 step
-    myMotor->step(100,FORWARD,DOUBLE);
+    myMotor->step(1,FORWARD,DOUBLE);
 
   //reduce the number of shots Remaining
     --shots;
@@ -74,7 +74,7 @@ void setup() {
     Serial.begin(9600);
 
   //Set up number of Shots to take
-  shots=60;
+  shots=1300;
     
   // set up the LCD's number of columns and rows: 
     lcd.begin(16, 2);
